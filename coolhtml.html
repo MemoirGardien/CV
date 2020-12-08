@@ -1,0 +1,240 @@
+<!-- <div class="container">
+Hover / Tap
+        <div class="dot one"><br></div>
+      <div class="dot two"><br></div>
+      <div class="dot three"><br></div>
+      <div class="dot four"><br></div>
+      <div class="dot five"><br></div>
+      <div class="dot six"><br></div>
+      <div class="dot seven"><br></div>
+      <div class="dot eight"><br></div>
+      <div class="dot nine"><br></div>
+      <div class="dot ten"><br></div>
+      <div class="dot eleven"><br></div>
+      <div class="dot twelve"><br></div>
+      <div class="dot thirteen"><br></div>
+      <div class="dot fourteen"><br></div>
+      <div class="dot fifteen"><br></div>
+      <div class="dot sixteen"><br></div>
+      <div class="dot seventeen"><br></div>
+      <div class="dot eighteen"><br></div>
+      <div class="dot nineteen"><br></div>
+      <div class="dot twenty"><br></div>
+</div> -->
+
+<div id="wrapper"><b>Stegosaurus</b> were large, heavily built, herbivorous quadrupeds with rounded backs, short fore limbs, long hind limbs, and tails held high in the air. <span class="emoji"></span>Due to their distinctive combination of broad, upright plates and tail tipped with spikes, Stegosaurus is one of the most recognizable kinds of dinosaurs. The function of this array of plates and spikes has been the subject of much speculation among scientists.
+<div id="ffMessage" hidden>If you're viewing this in Firefox, you might not see the shape. </div>
+</div>
+/* .container {
+        width: 300px;
+        height: 100px;
+        position: relative;
+        margin: 100px auto;
+        border-radius: 50px;
+        border: 3px dotted #eee;
+        text-align: center;
+        font-family: sans-serif;
+        padding-top: 10px;
+      }
+
+.dot {
+        position: absolute;
+        background: black;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        transform: rotate(0deg);
+        top: 25px;
+        left: 25px;
+        opacity: 0.1;
+        transition: all 0.75s cubic-bezier(.71,0,.33,1.56) 0ms;
+      }
+
+      .container:hover .dot {
+        transform: rotate(360deg);
+        border-radius: 0%;
+        left: 225px;
+        background: pink;
+      }
+
+.dot.two {
+        transition-delay: 3ms;
+      }
+      .dot.three {
+        transition-delay: 6ms;
+      }
+      .dot.four {
+        transition-delay: 9ms;
+      }
+      .dot.five {
+        transition-delay: 11ms;
+      }
+      .dot.six {
+        transition-delay: 14ms;
+      }
+      .dot.seven {
+        transition-delay: 17ms;
+      }
+      .dot.eight {
+        transition-delay: 20ms;
+      }
+      .dot.nine {
+        transition-delay: 23ms;
+      }
+      .dot.ten {
+        transition-delay: 26ms;
+      }
+      .dot.eleven {
+        transition-delay: 29ms;
+      }
+      .dot.twelve {
+        transition-delay: 32ms;
+      }
+      .dot.thirteen {
+        transition-delay: 35ms;
+      }
+      .dot.fourteen {
+        transition-delay: 38ms;
+      }
+      .dot.fifteen {
+        transition-delay: 41ms;
+      }
+      .dot.sixteen {
+        transition-delay: 44ms;
+      }
+      .dot.seventeen {
+        transition-delay: 47ms;
+      }
+      .dot.eighteen {
+        transition-delay: 50ms;
+      }
+      .dot.nineteen {
+        transition-delay: 53ms;
+      }
+      .dot.twenty {
+        transition-delay: 56ms;
+      } */
+
+
+      .emoji{
+        --image-url: url("data:image/svg+xml,<svg width='150px' height='150px' xmlns='http://www.w3.org/2000/svg'> <clipPath id='emojiClipPath'> <text x='0' y='130px'  font-size='130px'>🦕</text> </clipPath> <text x='0' y='130px'  font-size='130px' clip-path='url(#emojiClipPath)'>🦕</text>  </svg>");
+        background: var(--image-url);
+        shape-outside: var(--image-url);
+        float: left;
+        width: 150px;height: 150px;
+        margin-left: -6px;
+      }
+      #wrapper {
+        margin: auto; margin-top: calc(50vh - 170px);
+        text-align: justify;
+        width: 280px; height: 340px;
+      }
+      body { font-family: "Sorts mill goudy"; }
+
+      @supports (-moz-user-focus: none) { /* Firefox */
+        #ffMessage { display: block; margin: auto; width: 280px; color: blue; }
+      }
+
+
+
+      <!DOCTYPE html>
+      <html lang="en">
+      <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Quan Personal Hotpot</title>
+        <link rel="stylesheet" href="CSS/styles.css">
+      </head>
+      <body>
+
+        <table>
+          <tr>
+            <td><img id="avatar" src="images/cat1.png" alt="quan le avatar" /></td>
+            <td>
+              <h1>Quan Le</h1>
+              <p><em>Full-stack web developer</em> </p>
+          </td>
+        </tr>
+        </table>
+
+
+      <hr>
+      <h3>My hobbies</h3>
+      <ul>
+        <li>Gaming</li>
+        <li>Coding</li>
+        <li>CSS</li>
+      </ul>
+      <h3>Work Experience:</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>Dates</th>
+            <th>Work</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>2018-2020</td>
+            <td>Planetarium Digital Artist</td>
+          </tr>
+          <tr>
+            <td>2015-2018</td>
+            <td>Inter-Library Loan Assistant</td>
+          </tr>
+          <tr>
+            <td>2014-2016</td>
+            <td>Cage Monitor</td>
+          </tr>
+        </tbody>
+        <tfoot></tfoot>
+      </table>
+      <hr>
+      <h3>Skills</h3>
+      <table>
+        <tr>
+          <td>
+            <table>
+              <tr>
+                <td>HTML</td>
+                <td>🦊🦊🦊🦊🦊</td>
+              </tr>
+              <tr>
+                <td>CSS</td>
+                <td>🦊🦊🦊🦊</td>
+              </tr>
+              <tr>
+                <td>Javascript</td>
+                <td>🦊🦊🦊🦊🦊</td>
+              </tr>
+            </table>
+          </td>
+          <td>
+            <table>
+              <tr>
+                <td>Bootstrap 4</td>
+                <td>🦊🦊🦊🦊🦊</td>
+              </tr>
+              <tr>
+                <td>MongoDB</td>
+                <td>🦊🦊🦊🦊</td>
+              </tr>
+              <tr>
+                <td>Jquery</td>
+                <td>🦊🦊🦊🦊🦊</td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+      </table>
+
+      <hr />
+      <p><em>Connect with me on</em> <strong><a href="https://www.linkedin.com/in/quan-le-37892011a"> linkedin</a></strong><p>
+      <p><em>Check out my works at</em> <strong><a href="https://github.com/MemoirGardien?tab=repositories"> Github</a></strong><p>
+      <a href="contact-me.html"><strong>Contact Me</strong></a>
+
+
+
+      </body>
+      </html>
